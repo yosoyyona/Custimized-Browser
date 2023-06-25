@@ -10,6 +10,7 @@ const USERNAME_KEY = "username"
 function usernameSubmit(event) {
   event.preventDefault()
   createUserForm.classList.add(HIDDEN_CLASSNAME)
+  createUserForm.style.display = "none"
   const username = userInput.value
   localStorage.setItem(USERNAME_KEY, username)
   showGreeting(username)
@@ -18,6 +19,7 @@ function usernameSubmit(event) {
 function showGreeting(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME)
   greeting.classList.add(CAPITALIZE_CLASSNAME)
+  createUserForm.style.display = "none"
   greeting.innerText = `¡hola ${username}✨!`
 }
 
@@ -27,3 +29,4 @@ if(savedUsername === null) {
   createUserForm.classList.remove(HIDDEN_CLASSNAME)
   createUserForm.addEventListener("submit", usernameSubmit)
 } else showGreeting(savedUsername)
+
