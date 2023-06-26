@@ -1,7 +1,7 @@
 # Custimized-Browser
 
 ## Description 
-This is the final assignment of Nomad Coder's Vanilla JS Challenge. It was to create a Chrome clone app based on the basic of vanilla JS. 
+This is the final assignment of Nomad Coders Vanilla JS Challenge. It was to create a Chrome clone app based on the basic of vanilla JS. 
 
 ## Files
 | Name | Description |
